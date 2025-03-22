@@ -24,11 +24,32 @@
             font-size: 2.5rem;
         }
 
-        h2 {
+        .sub-header {
             margin-top: 30px;
             font-size: 1.5rem;
             font-weight: normal;
         }
+
+        .sub-header .highlight {
+    font-weight: bold;
+    color: #e0f7fa; /* soft cyan shade */
+    border-bottom: 1px solid rgba(224, 247, 250, 0.5); /* soft underline */
+    padding-bottom: 2px;
+    text-shadow: none;
+    animation: fadeIn 1.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
         #countdown {
             display: flex;
@@ -108,7 +129,10 @@
 <body>
 
     <h1>Team-Pioneer @ IIT Kanpur</h1>
-    <h2 id="message">Countdown to our Pitch at the 2025 Global Summit 🚀</h2>
+    <h2 class="sub-header" id="message">
+        Countdown to the launch of our platform at the <br>
+        <span class="highlight">GCIEM’s 2025 Global Summit 🚀</span>
+    </h2>
 
     <div id="countdown">
         <div class="time-box">
@@ -204,7 +228,7 @@
 
             if (now < pitchStart) {
                 gap = pitchStart - now;
-                message = "Countdown to our Pitch at the 2025 Global Summit 🚀";
+                message = "Countdown to the launch of our platform at the GCIEM’s 2025 Global Summit 🚀";
             } else if (now >= pitchStart && now <= pitchEnd) {
                 message = "Pitch is ongoing! 🚀";
                 document.getElementById("countdown").innerHTML = `<h2>${message}</h2>`;
@@ -220,7 +244,6 @@
             const m = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
             const s = Math.floor((gap % (1000 * 60)) / 1000);
 
-            document.getElementById("message").innerText = message;
             document.getElementById('days').innerText = String(d).padStart(2, '0');
             document.getElementById('hours').innerText = String(h).padStart(2, '0');
             document.getElementById('minutes').innerText = String(m).padStart(2, '0');
