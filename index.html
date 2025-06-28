@@ -283,5 +283,271 @@
     </div>
   </div>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team-Pioneer Spirit | IIT Kanpur</title>
+  <style>
+    /* Base Styling */
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #fff;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #033B4A;
+      font-weight: 700;
+      margin-bottom: 0.5em;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 2.5rem;
+      letter-spacing: -1px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: #2DA95C;
+      margin-top: 2rem;
+    }
+
+    .content-section {
+      background: #f9fbfc;
+      border-radius: 12px;
+      padding: 32px 24px;
+      margin: 32px auto;
+      max-width: 700px;
+      box-shadow: 0 2px 8px rgba(3,59,74,0.04);
+      text-align: left;
+    }
+
+    .content-section ul {
+      margin: 1em 0 0 1.2em;
+      padding: 0;
+      color: #222;
+    }
+
+    .content-section li {
+      margin-bottom: 0.8em;
+      font-size: 1.05em;
+      line-height: 1.5;
+    }
+
+    a {
+      color: #173C96;
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: #2DA95C;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 30px;
+      margin: 50px auto;
+      width: 90%;
+      max-width: 900px;
+      align-items: start;
+    }
+
+    .grid-item {
+      background: #f4f7fa;
+      border-radius: 10px;
+      padding: 24px 16px;
+      text-align: left;
+      min-height: 180px;
+      box-shadow: 0 1px 4px rgba(3,59,74,0.03);
+    }
+
+    .grid-item.center {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .github-logo {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    .linkedin-logo {
+      width: 18px;
+      vertical-align: middle;
+      margin-left: 4px;
+    }
+
+    .prip-image-wrapper {
+      width: 100%;
+      max-width: 900px;
+      margin: 30px auto 40px auto;
+      display: block;
+    }
+
+    .prip-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(3,59,74,0.07);
+    }
+
+    .video-container {
+      width: 90%;
+      max-width: 960px;
+      margin: 20px auto 0 auto;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(3,59,74,0.08);
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+
+    .video-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Floating Tiles Section */
+    .tiles-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px auto;
+      width: 90%;
+      gap: 20px;
+    }
+
+    .tile {
+      background: #fff;
+      border: 2px solid #2DA95C;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(3,59,74,0.06);
+      padding: 24px;
+      flex: 1 1 260px;
+      max-width: 320px;
+      text-align: left;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .tile h3 {
+      color: #033B4A;
+      margin-top: 0;
+    }
+
+    .tile ul {
+      margin: 0.75em 0 0 1.2em;
+      padding: 0;
+    }
+
+    .tile:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(3,59,74,0.1);
+    }
+
+    @media (max-width: 700px) {
+      .content-section {
+        padding: 18px 6px;
+      }
+      .team-grid {
+        gap: 16px;
+      }
+      .video-container {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Team-Pioneer Spirit @ IIT Kanpur</h1>
+
+  <!-- 1. Video Section -->
+  <h2>Platform Demo</h2>
+  <div class="video-container">
+    <div class="video-wrapper">
+      <iframe 
+        src="https://www.youtube.com/embed/or4K3OjeYkE?autoplay=1&mute=1&loop=1&playlist=or4K3OjeYkE"
+        title="Platform Demo Video"
+        class="video-iframe" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- 2. Floating Tiles Section -->
+  <section class="tiles-container">
+    <div class="tile">
+      <h3>Collaborate with Us</h3>
+      <p>We invite drug discovery and development SMEs and startups to join our next phase of product testing and development at IIT-Kanpur. Funding is available for:</p>
+      <ul>
+        <li>Advanced testing of our triple agonist anti‑obesity medication</li>
+        <li>Further development of our AI/ML platform including expanding to new diseases</li>
+        <li>Pre‑clinical validation studies</li>
+      </ul>
+    </div>
+    <div class="tile">
+      <h3>Scientific Validation</h3>
+      <ul>
+        <li>Proof‑of‑concept presented at Global Healthcare Innovation Consortium, Carle Illinois College of Medicine</li>
+        <li>Triple agonist with <b>EC<sub>50</sub></b> superior to best‑in‑class therapies</li>
+        <li>Performance validated through advanced docking studies</li>
+      </ul>
+    </div>
+    <div class="tile">
+      <h3>What will be my role?</h3>
+      <p>Your support is needed for:</p>
+      <ul>
+        <li>Platform testing and feedback with real‑world data and projects</li>
+        <li>Commercial deployment practices (on‑prem/cloud, security protocols)</li>
+        <li>Support In Vitro/In Vivo pre‑clinical testing at your site or IIT‑K labs</li>
+      </ul>
+    </div>
+    <div class="tile">
+      <h3>What is in it for me?</h3>
+      <p>Funding through PRIP will help you:</p>
+      <ul>
+        <li>Commercialize platform into global markets</li>
+        <li>Gain access to talent and state‑of‑the‑art labs</li>
+        <li>Get priority rights and platform support for your projects</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Remaining Sections (unchanged) -->
+  <!-- [Collaborate, Validation, PRIP, Contact, Team Grid] -->
+  <!-- Keep your remaining sections here as they are in your original code -->
+
+</body>
+</html>
+
+
+
+  
 </body>
 </html>
