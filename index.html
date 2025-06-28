@@ -363,8 +363,8 @@
   
     <section class="team-section">
   <h2>Our Team</h2>
-  <div class="team-grid">
-
+  <!-- First Row: Mentors -->
+  <div class="team-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 700px; margin: 0 auto;">
     <!-- Prof. Ketan Rajawat -->
     <div class="team-member">
       <img src="images/team/ketan.jpg" alt="Prof. Ketan Rajawat">
@@ -392,7 +392,10 @@
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
       </a>
     </div>
+  </div>
 
+  <!-- Second Grid: Remaining Team Members -->
+  <div class="team-grid">
     <!-- Akshay Kakar -->
     <div class="team-member">
       <img src="images/team/akshay.jpg" alt="Akshay Kakar">
