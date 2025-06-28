@@ -146,6 +146,40 @@
       height: 100%;
       border: none;
     }
+
+       /* Floating Tiles Section */
+    .tiles-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px auto;
+      width: 90%;
+      gap: 20px;
+    }
+    
+    .tile {
+      background: #fff;
+      border: 2px solid #2DA95C;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(3,59,74,0.06);
+      padding: 24px;
+      flex: 1 1 260px;
+      max-width: 320px;
+      text-align: left;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .tile h3 {
+      color: #033B4A;
+      margin-top: 0;
+    }
+    .tile ul {
+      margin: 0.75em 0 0 1.2em;
+      padding: 0;
+    }
+    .tile:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(3,59,74,0.1);
+    }
     
     @media (max-width: 700px) {
       .content-section {
@@ -177,7 +211,44 @@
       </iframe>
     </div>
   </div>
-
+ <!-- 2. Floating Tiles Section -->
+  <section class="tiles-container">
+    <div class="tile">
+      <h3>Collaborate with Us</h3>
+      <p>We invite drug discovery and development SMEs and startups to join our next phase of product testing and development at IIT-Kanpur. Funding is available for:</p>
+      <ul>
+        <li>Advanced testing of our triple agonist anti‑obesity medication</li>
+        <li>Further development of our AI/ML platform including expanding to new diseases</li>
+        <li>Pre‑clinical validation studies</li>
+      </ul>
+    </div>
+    <div class="tile">
+      <h3>Scientific Validation</h3>
+      <ul>
+        <li>Proof‑of‑concept presented at Global Healthcare Innovation Consortium, Carle Illinois College of Medicine</li>
+        <li>Triple agonist with <b>EC<sub>50</sub></b> superior to best‑in‑class therapies</li>
+        <li>Performance validated through advanced docking studies</li>
+      </ul>
+    </div>
+    <div class="tile">
+      <h3>What will be my role?</h3>
+      <p>Your support is needed for:</p>
+      <ul>
+        <li>Platform testing and feedback with real‑world data and projects</li>
+        <li>Commercial deployment practices (on‑prem/cloud, security protocols)</li>
+        <li>Support In Vitro/In Vivo pre‑clinical testing at your site or IIT‑K labs</li>
+      </ul>
+    </div>
+    <div class="tile">
+      <h3>What is in it for me?</h3>
+      <p>Funding through PRIP will help you:</p>
+      <ul>
+        <li>Commercialize platform into global markets</li>
+        <li>Gain access to talent and state‑of‑the‑art labs</li>
+        <li>Get priority rights and platform support for your projects</li>
+      </ul>
+    </div>
+  </section>
   <!-- Collaboration Section -->
   <section class="content-section">
     <h2>Collaborate with Us: Next Phase at IIT-Kanpur</h2>
